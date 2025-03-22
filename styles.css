@@ -7,8 +7,11 @@
 --main-color: #d186f9;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 *{
-    /* font-family: 'Quicksand', sans-serif; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
@@ -25,13 +28,24 @@ html {
 }
 
 body{
-    background-color: var(--bg-color);
+    background-color: var(--bg-color)!important;
     color: var(--text-color);
 }
 
 section{
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 10em 0;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+img{
+    width: 100%;
+}
+
+.heading {
+    margin-bottom: 4rem;
 }
 
 .header{
@@ -51,8 +65,6 @@ section{
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-    /* max-width: 10%;*/
-    /* border-radius: 50%;  */
 }
 
 .navbar a{
@@ -78,21 +90,36 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin-top: 77px;
+}
+
+.hero .no-c {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
 }
 
 .hero-img img{
-    width: 35vw;
+    display: flex;
+    justify-content: center;
+    max-width: 350px;
     border-radius: 50%;
-
 }
 
-.hero-content h3{
+.hero-content h2{
     font-size: 3.2rem;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-.hero-content h3:nth-of-type(2){
+.hero-content h2:nth-of-type(2){
     margin-bottom: 2rem;
 }
 span{
@@ -109,6 +136,7 @@ span{
     font-size: 1.6rem;
 }
 
+.tech-icons p,
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -120,17 +148,16 @@ span{
     border-radius: 50%;
     font-size: 3rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 1rem 1.5rem 1rem 0;
     transition: .3s ease;
 }
 
+.tech-icons p:hover,
 .social-media a:hover{
     background: var(--main-color);
     color: var(--secondary-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
-
-
 
 .contact-me{
     padding: 30px 14% 70px;
@@ -143,9 +170,8 @@ span{
 
 .contact-box{
     padding: 3rem;
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     border-radius: 3rem;
-    
 }
 
 .icon-img i{
@@ -191,10 +217,7 @@ span{
     align-items: center;
     gap: 2rem;
     background: var(--secondary-color);
-}
-
-.about-img img{
-    width: 35vw;
+    color: var(--text-color);
 }
 
 .heading {
@@ -213,10 +236,12 @@ span{
 
 .about-container p{
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin-top: 1.75rem;
 }
 
-
+.tech {
+    background: var(--bg-color);
+}
 
 .education{
     display: flex;
@@ -225,6 +250,8 @@ span{
     flex-direction: column;
     min-height: auto;
     padding: 5rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .education .education-row{
@@ -240,7 +267,6 @@ span{
 .education-colum .title-ed{
     font-size: 2.5rem;
     margin: 0 0 1.5rem 2rem;
-    padding-top: 5rem;
 }
 
 .education-colum .education-box{
@@ -310,6 +336,7 @@ span{
 
 .portfolio{
     background-color: var(--bg-color);
+    color:var(--text-color);
 
 }
 
@@ -317,11 +344,15 @@ span{
     margin-bottom: 4rem;
 }
 
-.portfolio-container{
+/* .portfolio-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
+} */
+
+.portfolio-box{
+    margin-bottom: 1.25rem;
 }
 
 .portfolio-container .portfolio-box{
@@ -349,7 +380,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,.1), var(--bg-color));
+    background: linear-gradient(rgba(0,0,0,.8), var(--bg-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,6 +422,8 @@ span{
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 .contact form{
     max-width: 70rem;
@@ -486,22 +519,19 @@ span{
 
 .footer-iconTop a i{
     font-size: 2.4rem;
-    /* background: var(--bg-color); */
     cursor: pointer;
+    color: var(--bg-color);
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
-}
+} */
 
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
-    }
-    section {
-        padding: 10rem 3% 2rem;
     }
     .portfolio {
         padding-bottom: 7rem;
@@ -551,7 +581,7 @@ span{
     }
 
     .hero-img img{
-        width: 70vw;
+        /* width: 70vw; */
         margin-top: 4rem;
     }
 
@@ -560,7 +590,7 @@ span{
     }
 
     .about img{
-        width:70vw;
+        /* width:70vw; */
         margin-top: 4rem;
     }
 
@@ -598,18 +628,18 @@ span{
     
 } */
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
     html{
         font-size: 50%;
     }
-}
+} */
 
-@media (max-width: 365px) {
+/* @media (max-width: 365px) {
     .hero-img img {
         width: 90vw;
     }
     .about-img img {
         width: 90vw;
     }
-}
+} */
 

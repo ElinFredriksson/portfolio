@@ -5,131 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Portfolio - Elin Fredriksson</title>
 </head>
 <body>
-
-    
     <header class="header">
-        <div class="logo">elin<span>.</span></div>
-        <!-- <img src="images/logo.png" alt="" class="logo"> -->
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About me</a>
-            <a href="#education">Experience</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <!-- <div class="container"> -->
+            <div class="logo">elin<span>.</span></div>
+            <!-- <img src="images/logo.png" alt="" class="logo"> -->
+            <!-- <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About me</a>
+                <a href="#education">Experience</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav> -->
+        </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h3>Hi there, I am</h3>
-            <h1>Elin Fredriksson</h1>
-            <h3>And I am a <span>Frontend Developer.</span></h3>
-            <p>Frontend developer student. With experience in design and with many years in the service industry. <br> Based in Stockholm</p>
-            <div class="social-media">
-                <a href="https://github.com/ElinFredriksson"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.linkedin.com/in/elin-fredriksson-535145249/"><i class='bx bxl-linkedin' ></i></a>
+    <section class="hero mt-6" id="home">
+        <div class="container">
+            <div class="row hero-content align-items-center justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <span class="no-c">Hi there, I am</span>
+                    <h1>Elin Fredriksson</h1>
+                    <h2>And I am a <span>Frontend Developer.</span></h3>
+                    <p class="mb-0">With experience in design and with many years in the service industry.</p>
+                    <p class="mt-0">Based in Stockholm</p>
+                    <div class="social-media">
+                        <a aria-label="To my github, external page" href="https://github.com/ElinFredriksson"><i class='bx bxl-github' ></i></a>
+                        <a aria-label="To my LinkedIn, external page" href="https://www.linkedin.com/in/elin-fredriksson-535145249/"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                
+                </div>
+                <div class="col-12 col-lg-6 hero-img">
+                    <img src="images/me.jpg" alt="Image of me">
+                </div>
             </div>
         </div>
-        <div class="hero-img">
-            <img src="images/me.jpg" alt="Me">
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row row-md-reverse align-items-center justify-content-center">
+                <!-- <div class="col-12 col-lg-4 about-img">
+                    <img src="images/about_me.JPG" alt="another image of me">
+                </div> -->
+                <div class="col-12 col-lg-7 about-container">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <h3>Frontend Developer</h3>
+                    <p>Hi, I’m Elin – a frontend developer who cares just as much about how things *look* as how they *work*.                    </p>
+                    <p>I currently work as a consultant, which means I get to explore lots of different types of projects – from building interfaces to shaping user experiences, writing code on both the frontend and backend, and sometimes even pixel-pushing in Figma. I love making things both beautiful and usable – I don’t think you should have to choose.</p>
+                    <p>My journey into tech started through UX/UI design, and before that I worked in the service industry – which taught me the importance of empathy, communication, and listening to people (skills I still use every day, especially when debugging 😅).</p>
+                    <p>I’m passionate about accessibility, thoughtful design, and creating interfaces that feel intuitive and friendly. And honestly? I just really enjoy making things look nice.</p>
+                    <p>Outside of the code editor, I thrive on good teamwork, great conversations, and fika-fueled idea sessions with colleagues. That social spark is just as important to me as the tech itself.</p>
+                    <!-- <a href="files/elin_fredriksson_CV.pdf" download="elin_fredriksson_CV" class="btn">Download CV as pdf</a> -->
+                </div>
+            </div>
         </div>
     </section>
 
-    
-
-
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about_me.JPG" alt="">
-        </div>
-        <div class="about-container">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer</h3>
-            <p>Hello, my name is Elin and I'm a front end student. I come from a background in the service industry, where I honed my skills in communication and customer service. Before my current education, I also studied UX/UI design, which sparked my interest in the field of web development. <br><br>
-
-                As a front end student, I am passionate about creating intuitive and visually appealing websites that deliver a great user experience. I have experience in HTML, CSS, and JavaScript, and I'm always eager to learn more about the latest web technologies. <br><br>
-                
-                My background in service industry has taught me the importance of empathy and understanding the needs of others, which I believe translates well into creating user-friendly web interfaces. With my previous experience in UX/UI design, I'm able to bring a unique perspective to my work and create designs that are both functional and visually appealing. <br><br>
-                
-                Thank you for taking the time to learn a little bit about me. I'm excited about the future of front end development and can't wait to see where my skills will take me!</p>
-            <a href="files/elin_fredriksson_CV.pdf" download="elin_fredriksson_CV" class="btn">Download CV as pdf</a>
-            <div class="social-media">
-                <a href="#"><i class='bx bxl-html5'></i></a>
-                <a href="#"><i class='bx bxl-css3' ></i></a>
-                <a href="#"><i class='bx bxl-sass'></i></a>
-                <a href="#"><i class='bx bxl-javascript' ></i></a>
-                <a href="#"><i class='bx bxl-nodejs'></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-react'></i></a>
-                <a href="#"><i class='bx bxl-nodejs'></i></a>
-                <a href="#"><i class='bx bxl-mongodb'></i></a>
-                <a href="#"><i class='bx bxl-figma' ></i></a>
-                <a href="#"><i class='bx bxl-typescript' ></i></a>
+    <section class="tech">
+        <div class="container">
+            <div class="row tech-icons justify-content-center gap-4">
+                <p href="#"><i class='bx bxl-html5'></i></p>
+                <p href="#"><i class='bx bxl-sass'></i></p>
+                <p href="#"><i class='bx bxl-css3' ></i></p>
+                <p href="#"><i class='bx bxl-javascript' ></i></p>
+                <p href="#"><i class='bx bxl-nodejs'></i></p>
+                <p href="#"><i class='bx bxl-linkedin' ></i></p>
+                <p href="#"><i class='bx bxl-react'></i></p>
+                <p href="#"><i class='bx bxl-nodejs'></i></p>
+                <p href="#"><i class='bx bxl-mongodb'></i></p>
+                <p href="#"><i class='bx bxl-figma' ></i></p>
+                <p href="#"><i class='bx bxl-typescript' ></i></p>
             </div>
         </div>
     </section>
 
     <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span></h2>
-
-        <div class="education-row">
-            <div class="education-colum">
-                <h3 class="title-ed">Education</h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> Aug. 2022 - May 2024</div>
-                            <h3>Front End Developer - KYH, Stockholm</h3>
-                            <p>Current, will finnish in May 2024.</p>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> Sep. 2021 - Jun. 2022</div>
-                            <h3>Digital Design - HKR, Kristianstad</h3>
-                            <p>UX/UI, grafic design, web design.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="education-colum">
-                <h3 class="title-ed">Experience</h3>
-
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> May. 2021 - Current</div>
-                            <h3>Restaurant - Fjällgatan, Stockholm</h3>
-                            <p>Working extra while styding.</p>
-                        </div>
-                    </div>
-
-                            <div class="education-content">
-                                <div class="content">
-                                    <div class="year"><i class='bx bxs-calendar'></i> Jun. 2018 - Aug. 2020</div>
-                                    <h3>Restaurant - Vinäger, Visby</h3>
-                                    <p>Seasonal work in the summers when not working with Skistar. Worked as a hostess for a summer resturant.</p>
-                                </div>
+        <div class="container">
+            <h2 class="heading">My <span>Journey</span></h2>
+            <div class="education-row row">
+                <div class="col-12 col-lg-6 education-colum">
+                    <h3 class="title-ed">Education</h3>
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> Aug. 2022 - May 2024</div>
+                                <h3>Front End Developer - KYH, Stockholm</h3>
+                                <p>Current, will finnish in May 2024.</p>
                             </div>
-
-                            <div class="education-content">
-                                <div class="content">
-                                    <div class="year"><i class='bx bxs-calendar'></i> Nov. 2014 - Apr. 2020</div>
-                                    <h3>Events & Restaurants - Skistar, Sälen</h3>
-                                    <p>Worked with events, hotels and restaurants as well as customer service.</p>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> Sep. 2021 - Jun. 2022</div>
+                                <h3>Digital Design - HKR, Kristianstad</h3>
+                                <p>UX/UI, grafic design, web design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 education-colum">
+                    <h3 class="title-ed">Experience</h3>
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> May. 2023 - Current</div>
+                                <h3>Front end developer - DevCore AB, Stockholm</h3>
+                                <p>Currently working as a front end developer at DevCore AB.</p>
+                            </div>
+                        </div>
+    
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> Nov. 2022 - May. 2023</div>
+                                <h3>Intership - DevCore AB, Stockholm</h3>
+                                <p>Intership as a front end student.</p>
+                            </div>
+                        </div>
+    
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> May. 2021 - Oct. 2022</div>
+                                <h3>Restaurant - Fjällgatan, Stockholm</h3>
+                                <p>Working extra while styding.</p>
+                            </div>
+                        </div>
+                                <div class="education-content">
+                                    <div class="content">
+                                        <div class="year"><i class='bx bxs-calendar'></i> Jun. 2018 - Aug. 2020</div>
+                                        <h3>Restaurant - Vinäger, Visby</h3>
+                                        <p>Seasonal work in the summers when not working with Skistar. Worked as a hostess for a summer resturant.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="education-content">
+                                    <div class="content">
+                                        <div class="year"><i class='bx bxs-calendar'></i> Nov. 2014 - Apr. 2020</div>
+                                        <h3>Events & Restaurants - Skistar, Sälen</h3>
+                                        <p>Worked with events, hotels and restaurants as well as customer service.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -137,71 +158,53 @@
                 </div>
             </div>
         </div>
+        
     </section>
-
-   
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="container">
+            <h2 class="heading">Selected <span>Projects</span></h2>
+            <div class="row portfolio-container">
+                <div class="col-12 col-md-6 portfolio-box">
+                    <img src="images/TechSpace.png" alt="Simple landing page for a booking site.">
+                    <div class="portfolio-layer">
+                        <h4>Landing page</h4>
+                        <p>Simple landing page for a booking site.</p>
+                        <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 portfolio-box">
+                    <img src="images/contact_us.png" alt="Contact us form with google maps">
+                    <div class="portfolio-layer">
+                        <h4>Contact us form</h4>
+                        <p>Contact us form with google maps</p>
+                        <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-6 portfolio-box">
+                    <img src="images/figma_elin.png" alt="Made a simple wireframe for a imaginary food delivery company">
+                    <div class="portfolio-layer">
+                        <h4>UX - food delivery app</h4>
+                        <p>Made a simple wireframe for a imaginary food delivery company</p>
+                        <!-- <a href="https://www.figma.com/file/kAljoriVQPiYFopDZmkixq/Inviduell-Uppgift?t=hdC9sQvgs8SiUNWV-1"><i class='bx bx-link-external'></i></a> -->
+                    </div>
+                </div>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/chat.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Simple chat app</h4>
-                    <p>A simple chat using socket.io and express</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                <div class="col-12 col-md-6 portfolio-box">
+                    <img src="images/chat.png" alt="A simple chat using socket.io and express">
+                    <div class="portfolio-layer">
+                        <h4>Simple chat app</h4>
+                        <p>A simple chat using socket.io and express</p>
+                        <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
+                    </div>
                 </div>
             </div>
-
-            <div class="portfolio-box">
-                <img src="images/todolist.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Todo list</h4>
-                    <p>Simple todo list using vanilla javascript and API</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/figma_elin.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>UX - food delivery app</h4>
-                    <p>Made a simple wireframe for a imaginary food delivery company</p>
-                    <!-- <a href="https://www.figma.com/file/kAljoriVQPiYFopDZmkixq/Inviduell-Uppgift?t=hdC9sQvgs8SiUNWV-1"><i class='bx bx-link-external'></i></a> -->
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/validation.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Validation form</h4>
-                    <p>Simple validation form using vanilla javascript.</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/landingpage.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Landing page</h4>
-                    <p>Simple landing page for a imaginary company</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/logo.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Simple logo</p>
-                    <!-- <a href="#"><i class='bx bx-link-external'></i></a> -->
-                </div>
-            </div>
-        </div>
+    </div>
     </section>
 
-    <section class="contact" id="contact"></section>
+    <section class="contact" id="contact">
     <h2 class="heading">Let's <span>Get In Touch!</span></h2>
       <div class="contact-me">
         <div class="contact-box">
@@ -220,54 +223,16 @@
             <p class="contact-me-info">Stockholm, Sweden</p>
         </div>
     </div>
-
-    <!-- <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="https://formsubmit.co/3165c3a5f15ebfdb1f9acf1519a2acc7" method="POST">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="email" placeholder="Email Adress" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Subject" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here" required></textarea>
-                <span class="focus"></span>
-            </div>
-
-            <div class="btn-box btns"></div>
-            <button type="submit" class="btn">Submit</button>
-        </form>
-    </section> -->
+</section>
 
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2023 by Elin Fredriksson | All rights reserved</p>
+            <p>&copy; 2024 Elin Fredriksson | All rights reserved</p>
         </div>
-
         <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-chevrons-up'></i></a>
+            <a aria-label="Scroll to top" href="#"><i class='bx bx-chevrons-up'></i></a>
         </div>
     </footer>
-
-    
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
